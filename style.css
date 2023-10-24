@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-shadow: border-box;
+}
+body{
+    background-color: #d68615;
+}
+header{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header h1{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 3rem;
+    font-weight: 900;
+    color: rgb(0, 0, 0);
+}
+#conteiner-galeria{
+    display: flex;
+    flex-wrap: wrap;
+    /*permite inserir uma quebra, nos itens que não cabem no eixo principal*/
+    justify-content: space-evenly;
+    gap: 2vw;
+    /*define um espaçamento entre os itens*/
+    padding: 0;
+    margin: 10 50 10 50;
+}
+.itens-galeria{
+    width: 340px;
+    height: 330px;
+    border: 10px solid rgb(128, 82, 36);
+    box-shadow: 5px 5px 5px rgb(84, 53, 23);
+    flex-grow: 1;
+    /*permite alterar a medida para maior*/
+}
+.itens-galeria img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.itens-galeria:hover{
+    transform: scale(1.3);
+    filter:hue-rotate(10%);
+    transition: transform 0.7s linear;
+    border: 10px solid rgb(197, 136, 74);
+}
+#praia{
+    transform: rotate(270deg);
+    width: 340px;
+    height: 600px;
+    margin-left: 129px;
+    margin-top: -135px;
+}
+
+
+
+
+
+
+
+
+
+
+footer{
+    padding: 20px;
+    height: 80px;
+    display: flex;
+    background-color: #000000;
+    margin-top: 20px;
+    color:rgb(166, 166, 166);
+}
+
+#footerSECRETO{
+    color: #343434;
+    margin-left: 20px;
+
+}
+#secretIMG{
+    filter: grayscale(70%);
+    width: 50px;
+
+}
+#secretIMG:hover{
+    transform: scale(4);
+    margin-right: 100px;
+    margin-bottom: 20px;
+    filter: none;
+    
+}
